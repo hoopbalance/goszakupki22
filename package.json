@@ -1,0 +1,11 @@
+{
+  "name": "goszakupki22",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node server/index.js",
+    "build": "vite build",
+    "preview": "NODE_ENV=production node server/index.js"
+  }
+}
