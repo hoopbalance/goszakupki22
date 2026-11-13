@@ -1,5 +1,4 @@
 import vikeReact from 'vike-react/config'
-import Head from './+Head.jsx'
 
 export default {
   extends: [vikeReact],
@@ -8,5 +7,4 @@ export default {
   description:
     'Информационно-правовое сопровождение закупочной деятельности заказчиков и участников закупок. 44-ФЗ, 223-ФЗ, ЭЦП. Барнаул, Алтайский край.',
   favicon: '/favicon.svg',
-  Head,
 }

@@ -1,6 +1,7 @@
 import { CacheProvider } from '@emotion/react'
 import { ThemeProvider, CssBaseline, Box } from '@mui/material'
-import { theme } from '../lib/theme.js'
+import theme from '../lib/theme.js'
+import 'medeo-font/sans.css'
 import { getServerEmotionCache } from '../lib/emotion-cache.js'
 import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
