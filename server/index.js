@@ -2,7 +2,10 @@ import express from 'express'
 import { renderPage, createDevMiddleware } from 'vike/server'
 import { newsList, getNewsBySlug } from './data/news.js'
 
-const isProduction = process.env.NODE_ENV === 'production'
+// Production-режим включается через NODE_ENV=production или флаг --prod
+// (флаг удобен для Windows/PowerShell, где инлайн-переменные не работают).
+const isProduction =
+  process.env.NODE_ENV === 'production' || process.argv.includes('--prod')
 const port = process.env.PORT || 3000
 
 const app = express()
